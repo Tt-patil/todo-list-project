@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/todo_background.jpg');
+   color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'motivational'; 
+    src: url('./fonts/g.ttf') format('truetype'); 
+  }
+
+.todo-container {
+    background-color: #0a0315c8;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 550px;
+    min-height: 400px;
+}
+
+h1 {
+    font-family: motivational;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #33c20f;
+}
+
+.add-todo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+    margin-bottom: 20px;
+}
+
+.add-todo input[type="text"] {
+   
+    width:80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-todo button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-todo button:hover {
+    background-color: #198d1f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    font-size:18px;
+}
+
+li.completed {
+    background-color: #b3b615af;
+    text-decoration: line-through;
+    border-radius: 5px;
+    color: black;
+}
+
+li .delete-btn {
+    margin-left: auto;
+    background-color: #f44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: none;
+    padding: 8px;
+    border-radius: 60%;
+    cursor: pointer;
+}
+
+li .delete-btn:hover {
+    background-color: #b40d0d;
+}
+
+li input[type="checkbox"] {
+    margin-right: 30px;
+    cursor: pointer;
+    transform: scale(1.5);
+    
+}
+
+.total-tasks {
+    color: white;
+    margin-left: 2%;
+}
+#total-tasks {
+    color: chartreuse;
+}
